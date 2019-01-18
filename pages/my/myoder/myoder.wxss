@@ -1,0 +1,4 @@
+/* pages/my/myoder/myoder.wxss */
+page{
+    background-color: #F5F9FA;
+}

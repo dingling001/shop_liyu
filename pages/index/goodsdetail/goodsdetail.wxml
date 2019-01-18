@@ -1,0 +1,95 @@
+<!--pages/index/goodsdetail/goodsdetail.wxml-->
+<swiper bindchange='onSlideChangeEnd' class='swiperbox'>
+        <block wx:for="{{info.photo}}" wx:key='item'>
+                <swiper-item class="swiperitem">
+                        <image src="{{item}}" class="slide-image" />
+                </swiper-item>
+        </block>
+</swiper>
+<view class='swipernum'>
+        <text>{{index}}</text>/
+        <text>{{info.photo.length}}</text>
+</view>
+<view>
+        <view class='nowprice'>
+                <text>￥{{info.pprice}}</text>
+                <text class='oldprice'>￥{{info. oprice}}</text>
+        </view>
+        <view class='titlebox'>
+                <text>{{info.name}}</text>
+        </view>
+</view>
+<view class='typebox' wx:for="{{attrValueList}}" wx:for-index="attrIndex">
+        <view class='typetitle'>{{item.stname}}</view>
+        <view class='typecolor'>
+                <text   data-attr-index="{{index}}"  wx:for="{{item.stval}}"  data-select-index="{{attrIndex}}" wx:for-item="stvalName" bindtap="tagChoose" class="{{item.attrValueStatus[index]?'actvietext':''}}">{{stvalName}}</text>
+                <!-- <text>棕色</text>
+        <text>白色</text> -->
+        </view>
+</view>
+<view class='numbox'>
+        <text>购买数量</text>
+        <!-- <view>
+        <text class='min'>-</text>
+        <text>1</text>
+        <text class='plus'>+</text>
+    </view> -->
+        <view class="stepper">
+                <!-- 减号 -->
+                <text class="{{minusStatus}}" bindtap="bindMinus">-</text>
+                <!-- 数值 -->
+                <input type="number" bindchange="bindManual" value="{{num}}" />
+                <!-- 加号 -->
+                <text class="normal" bindtap="bindPlus">+</text>
+        </view>
+</view>
+<view class='commenttitle'>
+        <view class='left'></view>
+        <view class='commentitem'>
+                <view class='iconfont icon-dengdai'></view>
+                <text>评论</text>
+        </view>
+        <view class='right'></view>
+</view>
+<view class='commentlist'>
+        <view wx:if="{{comments!==null}}" class="nullcomment">
+                暂无评论
+        </view>
+        <view wx:elif="{{comments==null}}">
+                <view class='commentitem'>
+                        <view class='commentname'>
+                                <image src='http://img04.tooopen.com/images/20130712/tooopen_17270713.jpg'></image>
+                                <text>微信昵称</text>
+                        </view>
+                        <view class='commenttime'>2017年12月19日</view>
+                </view>
+                <view class='commentcontent'>微信用户评论内容... ...</view>
+                <view class='lookmore'>查看全部评论</view>
+        </view>
+</view>
+<view class='commenttitle'>
+        <view class='left'></view>
+        <view class='commentitem'>
+                <view class='iconfont icon-dengdai'></view>
+                <text>详情</text>
+        </view>
+        <view class='right'></view>
+</view>
+<view class='goodsdetail'>
+        <view class='goodstitle'>商品详情介绍</view>
+        <view class='content'>
+                商品详情介绍商品详情介绍商品详情介绍商品详情介绍商品详情介绍商品详情介绍商品详情介绍商品详情介绍商品详情介绍。
+        </view>
+</view>
+<view class='shoppingbox'>
+        <view class='shoppingitem'>
+                <view class='iconfont icon-gouwuche' bindtap='shopping'></view>
+                <text>购物车</text>
+        </view>
+        <view class='shoppingitem'>
+                <view class='iconfont icon-shoucang' bindtap='collection'></view>
+                <text>收藏</text>
+        </view>
+        <view class='paycart'>加入购物车</view>
+        <view class='paymoney'>立即购买</view>
+</view>

@@ -1,0 +1,28 @@
+/* pages/classify/classify.wxss */
+page{
+        background-color: #F5F9FA;
+}
+.classList{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 25rpx 24rpx;
+    align-items: center
+}
+.classItem{
+    display: flex;
+     width: 48.9%; 
+    height: 243rpx;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10rpx;
+    overflow: hidden;
+    color: #fff;
+    background-size: 100% 100%;
+    background-position: center;
+    margin: 0 8rpx 8rpx 0;
+    background-color: #fff;
+}
+.classItem:active{
+    opacity: 0.7;
+}

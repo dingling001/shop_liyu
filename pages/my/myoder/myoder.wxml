@@ -1,0 +1,57 @@
+<!--pages/my/myoder/myoder.wxml-->
+
+<scroll-view>
+
+    <view class='goodsList'>
+        <view class='waterfall'>
+            <view class='goods_box'>
+                <image src="../../src/img/bpic.png" mode="widthFix" />
+                <view class='goods_name'>混色翻边长袖系带毛呢大衣边长袖系边长袖系边长袖系边长袖系</view>
+                <view>
+                    <text class='price'>￥419</text>
+                    <text class='old_price'>￥519</text>
+                </view>
+            </view>
+            <view class='goods_box'>
+                <image src='../../src/img/bpic01.png' mode="widthFix" />
+                <view class='goods_name'>混色翻边长袖系带毛呢大衣</view>
+                <view>
+                    <text class='price'>￥419</text>
+                    <text class='old_price'>￥519</text>
+                </view>
+            </view>
+            <view class='goods_box'>
+                <image src='../../src/img/bpic02.png' mode="widthFix" />
+                <view class='goods_name'>混色翻边长袖系带毛呢大衣</view>
+                <view>
+                    <text class='price'>￥419</text>
+                    <text class='old_price'>￥519</text>
+                </view>
+            </view>
+            <view class='goods_box'>
+                <image src="../../src/img/bpic03.png" mode="widthFix" />
+                <view class='goods_name'>混色翻边长袖系带毛呢大衣</view>
+                <view>
+                    <text class='price'>￥419</text>
+                    <text class='old_price'>￥519</text>
+                </view>
+            </view>
+            <view class='goods_box'>
+                <image src="../../src/img/Screenshot-5.png" mode="widthFix" />
+                <view class='goods_name'>混色翻边长袖系带毛呢大衣</view>
+                <view>
+                    <text class='price'>￥419</text>
+                    <text class='old_price'>￥519</text>
+                </view>
+            </view>
+            <view class='goods_box'>
+                <image src="../../src/img/bpic01.png" mode="widthFix" />
+                <view class='goods_name'>混色翻边长袖系带毛呢大衣</view>
+                <view>
+                    <text class='price'>￥419</text>
+                    <text class='old_price'>￥519</text>
+                </view>
+            </view>
+        </view>
+    </view>
+</scroll-view>

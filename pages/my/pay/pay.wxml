@@ -1,0 +1,53 @@
+<!--pages/my/pay/pay.wxml-->
+<view wx:if="{{type==1}}" class='pbox'>
+    <view class='iconfont icon-dengdaichuli'></view>
+    <text>待付款</text>
+</view>
+<view wx:elif="{{type==2}}" class='pbox'>
+    <view class='iconfont icon-dengdai'></view>
+    <text>待发货</text>
+</view>
+<view wx:elif="{{type==3}}" class='pbox'>
+    <view class='iconfont icon-dengdaichuli'></view>
+    <text>已发货</text>
+</view>
+<view wx:elif='{{type==4}}' class='pbox'>
+    <view class='iconfont icon-wancheng'></view>
+    <text>已完成</text>
+</view>
+<view class='addbox'>
+    <view class='payname'>
+        <text>收货人：<text>王小明</text></text>
+        <text>18652151666</text>
+    </view>
+    <view class='payadd'>
+        <view class='iconfont icon-dizhi'></view>
+        <text>收货地址：<text></text>天津市和平区全境 天津路天津公寓10 栋808号 </text>
+    </view>
+    <image src='../../src/img/add.png'></image>
+</view>
+<view class='goodsbox'>
+    <image src='../../src/img/Screenshot-5.png'></image>
+    <view class='goods'>
+        <view class='goodsname'>
+            <text>胡桃木质音乐盒</text>
+            <text wx:if='{{type==4}}'  class='comment' catchtap='gocomment'>评价商品</text>
+        </view>
+        <view class='goodstype'>
+            <text>棕色，大</text>
+        </view>
+        <view class='pricebox'>
+            <text class='goodsprice'>￥1314</text>
+            <text>X1</text>
+        </view>
+    </view>
+</view>
+<view class='orderbox'>
+<view class='orderitem'><text>订单编号：216484348136345</text><text></text></view>
+<view class='orderitem'><text>快递方式</text><text>快递</text></view>
+<view class='orderitem'><text>免运费</text><text></text></view>
+<view class='orderitem'><text></text><text>共计：<text class='totalprice'>￥1314</text></text></view>
+</view>
+<view class='delbox' wx:if='{{type==1}}'><view class='orderitem bcg'><text></text><text class='del'>去支付</text></view></view>
+<view class='delbox'  wx:elif='{{type==3}}'><view class='orderitem bcg'><text></text><text class='del'>确认收货</text></view></view>
+<view class='delbox'  wx:elif='{{type==4}}'><view class='orderitem bcg'><text></text><text class='del'>删除订单</text></view></view>

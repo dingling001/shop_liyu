@@ -1,0 +1,137 @@
+/* pages/my/pay/pay.wxss */
+
+page {
+    background-color: #f5f9fa;
+}
+
+.addbox {
+    background-color: #fff;
+    color: #000;
+    margin-bottom: 16rpx;
+}
+
+.pbox {
+    display: flex;
+    padding: 24rpx 32rpx;
+    font-size: 30rpx;
+}
+
+.pbox  .iconfont {
+    margin-right: 16rpx;
+}
+
+.payname {
+    display: flex;
+    align-items: center;
+    font-size: 32rpx;
+    justify-content: space-between;
+    padding: 35rpx 100rpx;
+}
+
+.payadd {
+    display: flex;
+    align-items: center;
+    padding: 0 82rpx 33rpx 0;
+}
+
+.payadd .iconfont {
+    padding: 13rpx 32rpx;
+}
+
+.payadd text {
+    font-size: 26rpx;
+    color: #333;
+}
+
+.addbox  image {
+    height: 14rpx;
+}
+
+.goodsbox {
+    display: flex;
+    justify-content: space-between;
+    padding: 32rpx 32rpx 42rpx 32rpx;
+    background-color: #fff;
+}
+
+.goodsbox image {
+    height: 170rpx;
+    width: 170rpx;
+    margin-right: 20rpx;
+}
+
+.goods {
+    display: flex;
+    flex: 2;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.goodsname {
+    display: flex;
+    justify-content: space-between;
+    font-size: 36rpx;
+    font-weight: 600;
+    align-items: center;
+}
+
+.goodsname .comment {
+    color: #ff000e;
+    font-size: 24rpx;
+}
+
+.goodstype {
+    font-size: 28rpx;
+    color: #999;
+}
+
+.pricebox {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 36rpx;
+    color: #000;
+}
+
+.goodsprice {
+    color: #f00;
+    font-size: 30rpx;
+}
+
+.orderbox {
+    background-color: #fff;
+    margin: 16rpx 0 80rpx 0;
+}
+
+.orderitem {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 41rpx 0;
+    margin: 0 32rpx;
+    border-bottom: 1px #e6e7eb solid;
+    font-size: 30rpx;
+    color: #000;
+}
+
+.orderitem:last-child {
+    border: 0;
+}
+.totalprice {
+    color: #f00;
+}
+.del{
+    font-size:32rpx;
+    border: 1px solid #000;
+    border-radius: 35rpx;
+    padding: 20rpx 35rpx; 
+}
+.bcg{
+    background-color: #fff;
+}
+.delbox{
+background-color: #fff;
+}
+.del:active{
+    opacity: 0.7;
+}

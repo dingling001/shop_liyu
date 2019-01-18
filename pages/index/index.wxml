@@ -1,0 +1,46 @@
+<!--index.wxml-->
+<import src="../template/template.wxml" />
+<scroll-view scroll-top="{{scrollTop}}" scroll-y="true" style="height:{{scrollHeight}}px;" bindscrolltolower="bindDownLoad" bindscrolltoupper="topLoad" bindscroll="scroll">
+  <view class='input_box  index_box ' bindtap='goSearch'>
+    <icon type='search' class='iconfont' size='13'></icon>
+    <text class='place'>搜索美食、家居和配饰</text>
+  </view>
+  <swiper class="swiper" autoplay="true" interval="3000" duration="1000">
+    <block wx:for="{{banners}}" wx:for-index="index" wx:key="{{index}}">
+      <swiper-item data-id="{{index}}">
+        <image src="{{item.slide_pic}}" class="slide-image" mode="scaleToFill" bindtap='previewImage' />
+      </swiper-item>
+    </block>
+  </swiper>
+  <view class='index_title'>
+    <view class='iconfont icon-jingpin'></view>
+    <text>精品推荐</text>
+    <view class='iconfont icon-jingpin'></view>
+  </view>
+  <view class='recommendlist'>
+    <view class='recommend' wx:for="{{recom}}" wx:for-index="index" wx:key="{{item.id}}">
+      <view class='recommend_item'>
+        <image src='{{item.thumb}}' mode=''></image>
+      </view>
+      <text>{{item.name}}</text>
+    </view>
+  </view>
+  <view class='goodsList'>
+    <view class='waterfall'>
+      <view class='goods_box' wx:for="{{goods}}" wx:for-index="index" wx:key="{{item.id}}" id="{{item.id}}" bindtap='gogoods'>
+        <image src="{{item.thumb}}" mode="widthFix" />
+        <view class='goods_name'>{{item.name}}</view>
+        <view>
+          <text class='price'>￥{{item.oprice}}</text>
+          <text class='old_price'>￥{{item.pprice}}</text>
+        </view>
+      </view>
+    </view>
+  </view>
+  <template is='kefu'></template>
+</scroll-view>
+<view class="body-view">
+  <loading hidden="{{hidden}}" bindchange="loadingChange">
+    加载中...
+  </loading>
+</view>

@@ -1,0 +1,39 @@
+/* pages/classify/detail/detail.wxss */
+page{
+    background-color: #F5F9FA;
+}
+.ranktitle{
+    display: flex;
+    justify-content: space-between;
+    padding: 32rpx 100rpx;
+    background-color: #fff;
+    align-items: center;
+    font-size: 28rpx;
+    color: #666666;
+    position: fixed;
+    z-index: 2;
+    left: 0;
+    top: 0;
+    width: 100%;
+    box-shadow: 1rpx 0 1rpx rgba(0, 0, 0, 0.08);
+    border-top: 1rpx solid #ebebeb;
+}
+.rankactive{
+    color: #000;
+}
+.rankbtn{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 10rpx;
+}
+.rankbtn .iconfont{
+        font-size: 17rpx;
+        font-weight: 600;
+}
+.pricerank{
+    display: flex;
+}
+.margin80{
+    margin-top: 100rpx;
+}

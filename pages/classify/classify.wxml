@@ -1,0 +1,9 @@
+<!--pages/classify/classify.wxml-->
+<import src="../template/template.wxml" />
+<view class='classList'>
+  <view class='classItem'  wx:for="{{terms}}" wx:key="item.name" data-id="{{item.term_id}}" style='background-image:url({{item.thumb}})' bindtap='godetail'>
+ <view>{{item.name}}</view> 
+</view>     
+</view>
+    <template is='kefu'></template>
+

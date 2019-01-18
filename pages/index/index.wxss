@@ -1,0 +1,53 @@
+.swiper{
+    height: 300rpx;
+    overflow: hidden;
+margin-top: 130rpx;
+}
+.slide-image {
+    height: 315rpx;
+    width: 100%;
+}
+
+ .index_title .iconfont {
+    margin: 0 18rpx;
+}
+
+.index_title {
+    width: 255rpx;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    margin: 40rpx auto;
+    font-size: 30rpx;
+}
+
+.recommendlist{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 24rpx 60rpx 24rpx;
+}
+.recommend{
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+.recommend_item{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 210rpx;
+width: 210rpx;
+padding: 20rpx;
+ border-radius:50%; 
+ overflow: hidden;  
+box-shadow: 0rpx 4rpx 4rpx  rgba(0, 0, 0, 0.2);
+margin-bottom: 24rpx;
+}
+  .recommend_item image{
+ height:140rpx;
+width: 140rpx;
+ /* border-radius:50%;  */
+ }  
+.recommend text{
+    font-size: 24rpx;
+}

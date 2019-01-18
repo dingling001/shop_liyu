@@ -1,0 +1,45 @@
+<!--pages/classify/detail/detail.wxml-->
+<scroll-view scroll-top="{{scrollTop}}" scroll-y="true" style="height:{{scrollHeight}}px;" bindscrolltolower="bindDownLoad" bindscrolltoupper="topLoad" bindscroll="scroll">
+    <view class='ranktitle'>
+        <view class="{{order==0?'rankactive':''}}" bindtap='multiple'>
+            <text>综合</text>
+        </view>
+        <view class="{{order==1?'rankactive':''}}" bindtap='sales' >
+            <text>销量</text>
+        </view>
+        <view class="{{order==2?'rankactive':''}}" bindtap='lastnew'>
+            <text>新品</text>
+        </view>
+        <view class='pricerank'  bindtap='price'>
+            <text  class="{{order==3?'rankactive':''}}">价格</text>
+            <view class='rankbtn'>
+                <view class='iconfont icon-xiangshang'></view>
+                <view class='iconfont icon-xiangxia'></view>
+            </view>
+        </view>
+    </view>
+    <view wx:if="{{goodsList.length==0}}" class='goodsnull'>
+        <view>
+            <text>暂无商品</text>
+        </view>
+    </view>
+    <view class='goodsList margin80' wx:else>
+        <view class='waterfall'>
+            <view class='goods_box' wx:for="{{goodsList}}"  wx:key="{{item.id}}">
+                <image src="{{item.thumb}}" mode="widthFix" />
+                <view class='goods_name'>{{item.name}}</view>
+                <view>
+                    <text class='price'>￥{{item.pprice}}</text>
+                    <text class='old_price'>￥{{item.oprice}}</text>
+                </view>
+            </view>
+     
+    
+        </view>
+    </view>
+</scroll-view>
+<view class="body-view">
+    <loading hidden="{{hidden}}" bindchange="loadingChange">
+        加载中...
+    </loading>
+</view>

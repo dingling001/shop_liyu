@@ -1,0 +1,18 @@
+/* pages/tempalte/template.wxss */
+.service{
+    position: fixed;
+    right: 24rpx;
+    bottom: 24rpx;
+    height: 100rpx;
+    width: 100rpx;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.service image{
+    height: 100rpx;
+    width: 100rpx;
+}
+.service:active{
+    opacity: 0.7
+}

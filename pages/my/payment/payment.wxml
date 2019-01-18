@@ -1,0 +1,65 @@
+<!--pages/my/payment/payment.wxml-->
+<view class='payboxs'>
+    <view class='payactive'>
+        <text>待付款</text>
+    </view>
+    <view bindtap='delivery'>
+        <text>待发货</text>
+    </view>
+    <view bindtap='shipped'>
+        <text>已发货</text>
+    </view>
+    <view bindtap='completed'>
+        <text>已完成</text>
+    </view>
+</view>
+<view class='pays'>
+<view class='payorder '>
+    <text>订单编号： 13548979665464987</text>
+</view>
+<view class='paypay'>
+<view class='paylist' bindtap='pay'>
+    <image src='../../src/img/Screenshot-5.png'></image>
+    <view class='payright'>
+      <view> <text class='payname'>胡桃木质音乐盒</text></view> 
+        <view class='payprice'>
+            <text class='rightprice'>￥1314</text>
+            <text class='rightnum'>数量：1</text>
+        </view>
+    </view>
+</view>
+<view class='gopay'><text>去支付</text></view>
+</view>
+<view class='paypay'>
+<view class='payorder '>
+    <text>订单编号： 13548979665464987</text>
+</view>
+<view class='paylist'>
+    <image src='../../src/img/Screenshot-5.png'></image>
+    <view class='payright'>
+      <view> <text class='payname'>胡桃木质音乐盒</text></view> 
+        <view class='payprice'>
+            <text class='rightprice'>￥1314</text>
+            <text class='rightnum'>数量：1</text>
+        </view>
+    </view>
+</view>
+<view class='gopay'><text>去支付</text></view>
+</view>
+<view class='paypay'>
+<view class='payorder '>
+    <text>订单编号： 13548979665464987</text>
+</view>
+<view class='paylist'>
+    <image src='../../src/img/Screenshot-5.png'></image>
+    <view class='payright'>
+      <view> <text class='payname'>胡桃木质音乐盒</text></view> 
+        <view class='payprice'>
+            <text class='rightprice'>￥1314</text>
+            <text class='rightnum'>数量：1</text>
+        </view>
+    </view>
+</view>
+<view class='gopay'><text>去支付</text></view>
+</view>
+</view>

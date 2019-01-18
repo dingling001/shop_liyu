@@ -1,0 +1,67 @@
+{
+    "pages": [
+        "pages/index/index",
+        "pages/index/search/search",
+        "pages/classify/classify",
+        "pages/my/my",
+        "pages/cart/cart",
+        "pages/template/template",
+        "pages/my/payment/payment",
+        "pages/my/delivery/delivery",
+        "pages/my/shipped/shipped",
+        "pages/my/completed/completed",
+        "pages/my/pay/pay",
+        "pages/my/comment/comment",
+        "pages/my/myoder/myoder",
+        "pages/classify/detail/detail",
+        "pages/index/goodsdetail/goodsdetail",
+        "pages/index/discuss/discuss",
+        "pages/index/paydetail/paydetail",
+        "pages/index/goodsdetail/test/test",
+        "pages/index/goodsdetail/test2/test2"
+    ],
+    "window": {
+        "backgroundTextStyle": "light",
+        "navigationBarBackgroundColor": "#fff",
+        "navigationBarTitleText": "礼寓Leemoral",
+        "navigationBarTextStyle": "black",
+        "enablePullDownRefresh": true,
+        "onReachBottomDistance": 50
+    },
+    "tabBar": {
+        "selectedColor": "#000",
+        "list": [
+            {
+                "selectedIconPath": "pages/src/img/nav_02.png",
+                "iconPath": "pages/src/img/nav02.png",
+                "pagePath": "pages/index/index",
+                "text": "首页"
+            },
+            {
+                "selectedIconPath": "pages/src/img/nav_04.png",
+                "iconPath": "pages/src/img/nav03.png",
+                "pagePath": "pages/classify/classify",
+                "text": "分类"
+            },
+            {
+                "selectedIconPath": "pages/src/img/nav_06.png",
+                "iconPath": "pages/src/img/nav04.png",
+                "pagePath": "pages/cart/cart",
+                "text": "购物车"
+            },
+            {
+                "selectedIconPath": "pages/src/img/nav_08.png",
+                "iconPath": "pages/src/img/nav05.png",
+                "pagePath": "pages/my/my",
+                "text": "我的"
+            }
+        ]
+    },
+    "networkTimeout": {
+        "request": 1000,
+        "connectSocket": 1000,
+        "uploadFile": 1000,
+        "downloadFile": 1000
+    },
+    "debug": true
+}

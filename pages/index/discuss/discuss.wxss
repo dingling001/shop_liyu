@@ -1,0 +1,29 @@
+/* pages/index/discuss/discuss.wxss */
+
+
+.commentitem {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 24rpx;
+}
+
+.commentname {
+    display: flex;
+    align-items: center;
+}
+
+.commentlist  image {
+    height: 60rpx;
+    width: 60rpx;
+    border-radius: 50%;
+    margin-right: 24rpx;
+}
+
+.commenttime {
+    color: #999;
+}
+.commentcontent{
+    padding: 28rpx 0;
+    font-size: 24rpx;
+}

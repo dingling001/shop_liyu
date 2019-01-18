@@ -1,0 +1,14 @@
+/* pages/my/completed/completed.wxss */
+page{
+    background-color: #F5F9FA;
+}
+.commentbox{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.comment{
+    font-size: 24rpx;
+    color: #FF0000;
+}

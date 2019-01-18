@@ -1,0 +1,61 @@
+/* pages/my/my.wxss */
+page{
+    background-color: #F5F9FA;
+}
+.myimg{
+    height: 258rpx;
+    width: 100%;
+}
+.headbox{
+    width: 160rpx;
+    height: 160rpx;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: -80rpx  auto 0 auto;
+}
+.myhead{
+       width: 160rpx;
+    height: 160rpx;
+    border-radius: 50%;
+}
+.myname{
+        width: 160rpx;
+        text-align: center;
+        margin: 18rpx auto 78rpx auto;
+        font-size: 30rpx;
+}
+.mylist{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 72rpx;
+    align-items: center;
+}
+.myitem{
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    align-items: center;
+    font-size: 28rpx;
+}
+.myitem:active{
+    background-color: rgba(0,0,0,0.1);
+}
+.myitem .iconfont{
+    font-size: 42rpx;
+}
+.myoder{
+    display: flex;
+    justify-content: space-between;
+    padding: 45rpx  20rpx 45rpx 24rpx;
+    margin: 0 32rpx;
+    font-size: 28rpx;
+    background-color: #fff;
+    border-bottom: 1rpx solid #E6EAEB; 
+}
+.myoder:active{
+    background-color: rgba(0,0,0,0.08)
+}
+.my{
+    margin: 75rpx 0 0 0;
+    box-shadow: 2rpx 0  4rpx rgba(0,0,0,0.08)
+}

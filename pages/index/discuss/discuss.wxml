@@ -1,0 +1,8 @@
+<!--pages/index/discuss/discuss.wxml-->
+ <view class='commentitem'>
+            <view class='commentname'>
+                <image src='http://img04.tooopen.com/images/20130712/tooopen_17270713.jpg'></image>
+                <text>微信昵称</text>
+            </view>
+            <view class='commenttime'>2017年12月19日</view>
+   </view>

@@ -1,0 +1,6 @@
+<!--pages/tempalte/template.wxml-->
+<template name='kefu'>
+    <view class='service'>
+        <image src='../src/img/kefu.png ' mode='scaleToFill'></image>
+    </view>
+</template>

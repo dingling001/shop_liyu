@@ -1,0 +1,134 @@
+/* pages/my/comment/comment.wxss */
+
+page {
+    background-color: #f5f9fa;
+}
+
+.goodsbox {
+    display: flex;
+    justify-content: space-between;
+    padding: 32rpx 32rpx 42rpx 32rpx;
+    background-color: #fff;
+}
+
+.goodsbox image {
+    height: 170rpx;
+    width: 170rpx;
+    margin-right: 20rpx;
+}
+
+.goods {
+    display: flex;
+    flex: 2;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.goodsname {
+    display: flex;
+    justify-content: space-between;
+    font-size: 36rpx;
+    font-weight: 600;
+    align-items: center;
+}
+
+.goodsname .comment {
+    color: #ff000e;
+    font-size: 24rpx;
+}
+
+.goodstype {
+    font-size: 28rpx;
+    color: #999;
+}
+
+.pricebox {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 36rpx;
+    color: #000;
+}
+
+.goodsprice {
+    color: #f00;
+    font-size: 30rpx;
+}
+
+.content {
+    height: 330rpx;
+    background-color: #f5f5f5;
+    padding: 24rpx 33rpx;
+    font-size: 24rpx;
+}
+
+.content textarea {
+    height: 330rpx;
+    width: 100%;
+    line-height: 44rpx;
+}
+
+.comments {
+    color: #ccc;
+    font-size: 24rpx;
+}
+
+.imglist {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 32rpx;
+}
+
+.img_itembox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 33%;
+    color: #afb0b3;
+    font-size: 26rpx;
+    overflow: hidden;
+    height: 180rpx;
+    position: relative;
+    margin-bottom: 20rpx;
+}
+
+.img_itembox .icon-quxiao {
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 99;
+}
+
+.img_item image {
+    height: 180rpx;
+    width: 180rpx;
+}
+
+.addbgc {
+    background-color: #f0f1f5;
+    border-radius: 5rpx;
+}
+
+.img_item  .icon-tianjia {
+    margin-bottom: 20rpx;
+}
+
+.img_item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.subtn {
+    background-color: #e51617;
+    box-shadow: 1rpx 0 2rpx rgba(0, 0, 0, 0.08);
+    color: #fff;
+    text-align: center;
+    padding: 35rpx 0;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    font-size: 32rpx;
+}

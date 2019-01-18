@@ -1,0 +1,99 @@
+/* pages/cart/cart.wxss */
+page{
+    background-color: #f5f9FA;
+}
+.checkbox{
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+margin-bottom: 8rpx;
+}
+.checkitem{
+    display: flex;
+    justify-content: space-between;
+    padding: 24rpx;
+    font-size: 36rpx;
+    align-items: center;
+}
+.checkitem image{
+    height: 170rpx;
+    width: 170rpx;
+}
+.itemname,.pricebox{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 0 0 32rpx;
+}
+.itemname{
+        margin-bottom: 88rpx;
+}
+.itemname text{
+    font-weight: 600;
+}
+
+.rightbox{
+    flex: 2;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+.price{
+    display: flex;
+    align-items: center;
+}
+.priceminus,.priceplus{
+    height: 60rpx;
+    width: 60rpx;
+    background-color: #F5F5F5 ;
+    border-radius:3rpx; 
+    text-align: center;
+    font-size: 32rpx;
+    color: #333;
+    line-height: 60rpx;
+}
+.pricebox text{
+    color: #FF0000;
+    font-size: 32rpx;
+}
+.priceminus{
+    margin: 0 43rpx 0 0;
+}
+.priceplus{
+    margin: 0 0 0 43rpx;
+}
+.price input{
+    text-align: center;
+    width: 60rpx;
+}
+.del{
+    font-size: 24rpx;
+    color: #FF0000;
+}
+.paybox{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    z-index: 100;
+    width: 100%;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 0 0 33rpx;
+}
+.total{
+    font-size: 30rpx;
+}
+.paybtn{
+    padding: 33rpx 55rpx;
+    background-color: #D70000 ;
+    font-size: 36rpx;
+    color: #fff;
+}
+.paynumeber{
+font-size: 24rpx;
+}
+.paybtn:active{
+    opacity: 0.7;
+}

@@ -1,0 +1,36 @@
+<!--pages/my/my.wxml-->
+<import src="../template/template.wxml"/>
+<image src='../src/img/bg.png' mode='scaleToFill' class='myimg'></image>
+<view class='headbox'>
+    <image src='{{userInfo.avatarUrl}}' class='myhead'></image>
+</view>
+<view class='myname'>{{userInfo.nickName}}</view>
+<view class='mylist'>
+    <view class='myitem'  bindtap='payment'>
+        <view class='iconfont icon-daifukuan'></view>
+        <text>待付款</text>
+    </view>
+    <view class='myitem' bindtap='delivery'>
+        <view class='iconfont icon-daifukuan'></view>
+        <text>待发货</text>
+    </view>
+    <view class='myitem' bindtap='shipped'>
+        <view class='iconfont icon-daifukuan'></view>
+        <text>已发货</text>
+    </view>
+    <view class='myitem' bindtap='completed'>
+        <view class='iconfont icon-daifukuan'></view>
+        <text>已完成</text>
+    </view>
+</view>
+<view class='my'>
+    <view class='myoder' bindtap='gomyoder'>
+        <text>我的订单</text>
+        <view class='iconfont  icon-jinru'></view>
+    </view>
+    <view class='myoder'>
+        <text>我的收藏</text>
+        <view class='iconfont  icon-jinru'></view>
+    </view>
+</view>
+<template is='kefu'></template>

@@ -1,0 +1,22 @@
+<!--pages/search/search.wxml-->
+<view class='input_box searchbox '>
+<icon type='search'  class='iconfont'  size='13'></icon>
+<input value="{{searchKeyword}}" placeholder='搜索美食、家居和配饰'  auto-focus    type='text' confirm-type='search'  placeholder-class='place'  bindinput='bindKeywordInput'></input>
+<view class='searchbtn'><text wx:if="{{searchKeyword}}" bindtap='keywordSearch'>搜索</text> <text wx:else bindtap='cancel'>取消</text></view>
+</view>
+<scroll-view scroll-y="true" bindscrolltolower="searchScrollLower"  class='searchResult'>
+  <view class='goodsList'>
+        <view class='waterfall'>
+             <view class='goods_box' wx:for="{{searchSongList}}" wx:for-index="index"   data-data="{{item}}"   wx:key="{{item.id}}" >
+                 <image src="{{item.thumb}}" mode="widthFix"  /> 
+                <view class='goods_name' bindtap='gogoods'>{{item.name}}</view>
+                <view>
+                     <text class='price'>￥{{item.oprice}}</text> 
+                     <text class='old_price'>￥{{item.pprice}}</text> 
+                </view> 
+             </view> 
+        </view>
+    </view>
+      <view class="loading" hidden="{{!searchLoading}}">正在载入更多...</view>  
+      <view class="loading complete" hidden="{{!searchLoadingComplete}}">已加载全部</view> 
+</scroll-view>
